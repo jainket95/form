@@ -1,6 +1,6 @@
 function init() {
   const DomStrings = {
-    modal: document.querySelector(".modal"),
+    modal: document.querySelector("#modal"),
     toggleButton: document.querySelector(".orange-button"),
     emailInput: document.querySelector("#email"),
     close: document.querySelector(".close"),
@@ -120,7 +120,7 @@ async function postRequest(data, portalId, formGuid) {
 function postEmailData(DomStrings) {
   var emailInput = DomStrings.emailInput.value;
 
-  var hutk = $.cookie("hubspotutk");
+
 
   const simple = {
     portalId: "5689982",
@@ -184,7 +184,6 @@ function postEmailData(DomStrings) {
       }
     ],
     context: {
-      hutk: hutk,
       pageUri: document.uri,
       pageName: document.title
     }
@@ -217,7 +216,6 @@ function postModalData(DomStrings) {
   var contact = DomStrings.contact.value;
   var successMessage = DomStrings.successMessage;
 
-  var hutk = $.cookie("hubspotutk");
   const modal = {
     portalId: "5689982",
     formGuid: "26da5653-36ec-4492-89b1-46cf434ed887"
@@ -291,7 +289,6 @@ function postModalData(DomStrings) {
       }
     ],
     context: {
-      hutk: hutk,
       pageUri: window.location.hostname,
       pageName: document.title
     }

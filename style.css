@@ -1,12 +1,12 @@
     .form-container{
       background: inherit;
-      width:60%;
+      width:600px;
       height:50px;
       margin:auto;
-      box-sizing: border-box;
+      padding: 0px;
     }
     .simple-form{
-      width:80%;
+      width:100%;
     }
     .rounded-orange{
       font-family: 'Source Sans Pro', sans-serif;
@@ -19,7 +19,7 @@
       margin:auto;
       padding: 0px 10px;
       border-radius: 50px;
-      width:85%;
+      width:80%;
       height:50px;
       font-size: 20px;
       font-weight: 300;
@@ -47,15 +47,16 @@
       left:-53px;
       cursor: pointer;
     }
-    .modal{
+    .modal-f{
       display:none;
       position:fixed;
       top:0px;
-      z-index: 100;
+      z-index: 500 !important ;
       width: 100vw;
       height:100vh;
       overflow: hidden;
-      background-color: rgba(0,0,0,0.6) 
+      background-color: rgba(0,0,0,0.6) ;
+      opacity:100%;
     }
     .modal-container{
       width:65%;
@@ -176,7 +177,6 @@
       font-size: 17px;
       font-weight:300;
       color:#1785c5;
-      opacity: 20%;
     }
     .modal-button{
       outline:none;
@@ -254,7 +254,6 @@
       font-size: 17px;
       font-weight:300;
       color:#1b1b1b;
-      opacity: 20%;
       padding: 5px;
       margin-left: -12px;
       margin-top: 5px;
@@ -274,7 +273,7 @@
       font-size: 17px;
       font-weight:300;
       color:#1b1b1b;
-      opacity: 20%;
+
       padding: 5px;
       margin-left: -12px;
       margin-top: 5px;
